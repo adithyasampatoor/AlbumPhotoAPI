@@ -1,45 +1,26 @@
-# Forever Challenge
-Please create a fork of this project and fulfill the requirements below.  Upon completion, please send Forever a link to your fork.
+# Description
 
-If you need to make an assumption about a vague requirement, feel free to do so, but please state that assumption at the bottom of this Readme.  Try to fulfill all of the requirements as if this application is going to be deployed into the real world with heavy usage.
+An Album Photo Project where you will find an API to add create an Album, add Photos to the Album.
 
+##Following were taken care of
 
-# Requirements
-1. Add basic API actions (index, show, create, update and destroy) to the albums_controller and photos_controller.
-2. The albums index actions should return JSON with all available fields for the record AND a field for the total number of photos in the album.
-3. The API index actions should use pagination with a max of 10 items per page and accept a param to iterate through pages.
-4. An album's show action should return data for each photo in the album.
-5. Ensure that every album has a name.
-6. Ensure that every photo record belongs to an album, has a name and a url that ends with the string ".jpeg" or ".jpg".
-7. Ensure that no more than 60 photos can be added to an album.
-8. Create or modify a controller action so that multiple photos can be added to an album from one request.
-9. Ensure that an album's average_date field is always the average taken_at date of all associated photos (or nil if the album has no photos).
-
-
-# Bonus (only for senior developers)
-1. Allow the API to add videos to an album.  The album index action should return a combination of photos and videos.
-2. Allow photos to be added to multiple albums.
-
+1. The albums index actions will return JSON with all available fields for the record AND a field for the total number of photos in the album.
+2. The API index actions will use pagination with a max of 10 items per page and accept a param to iterate through pages.
+3. An album's show action will return data for each photo in the album.
+4. Every photo record belongs to an album, has a name and a url that ends with the string ".jpeg" or ".jpg".
+5. No more than 60 photos can be added to an album.
+6. Multiple photos can be added to an album from one request.
+7. Album's average_date field is always the average taken_at date of all associated photos (or nil if the album has no photos).
+8. Unit Test cases are in the folder test and spec
+9. Test cases for the controller actions are in the test folder.
 
 # Tech Specs
 Rails 4.2.6
-
-SQLite is preferred. Postgres is ok.
-
-Anything can be changed if you think it's needed, including the gemfile, database schema, configs, etc.
-
+Ruby 2.2.0
 
 # Getting Started
 Run `bundle install` and `rake db:migrate`.
-
 You can populate your database with fake data by running `rake db:seed`.
 
 
-----------------------------------------------------------------------------------------------------
 
-Author : Adithya
-
-1) Unit Test cases are in the folder test and spec
-2) Test cases for the controller actions are in the test folder.
-3) You can add multiple photos to an album by selecting a particular album, then at the bottom of the page you will find a button ADD PHOTO, when clicked on that it will ask for CREATE PHTO and ADD MORE PHOTOS (you will be able to add more photos once you create one)
-4) I have used ruby 2.2.0 and rails as specified in the requirements
