@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h1><%= @photo.name %></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="media">
+      <div class="media-left media-middle">
+        <img class="media-object" src="<%= @photo.url %>" width="50" height="50" alt="<%= @photo.name %>">
+      </div>
+      <div class="media-body">
+        <h6>Taken at: <%= @photo.taken_at %></h6>
+        <p><%= @photo.description %></p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <%= link_to "Edit", edit_album_photo_path(@photo.album_id, @photo.id), class: 'btn btn-large btn-primary' %>
+    <%= link_to "Delete", album_photo_path(@photo.album_id, @photo.id), method: :delete, class: 'btn btn-large btn-danger' %>
+  </div>
+</div>
+
+<%= link_to "Back to Albums", "/" %>

@@ -1,0 +1,18 @@
+one:
+  name: photo1
+  album_id: 1
+  description: description
+  url: https://image.org/image.jpg
+  id: 1
+two:
+  name: photo2
+  album_id: 1
+  description: description
+  url: https://image.org/image.jpg
+  id: 2
+three:
+  name: photo3
+  album_id: 1
+  description: description
+  url: https://image.org/image.jpg
+  id: 3    

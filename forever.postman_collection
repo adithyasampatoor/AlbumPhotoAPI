@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "forever",
+		"_postman_id": "e64bd28a-4417-8411-eadd-7aba0f01e61d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "album",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/4.json",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"GET\\\" \\\"http://0.0.0.0:3000/albums/4.json\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "album 404",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/6555.json",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"GET\\\" \\\"http://0.0.0.0:3000/albums/6555.json\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "albums",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums.json",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"GET\\\" \\\"http://0.0.0.0:3000/albums.json\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "photo",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/3/photos/1101.json",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"GET\\\" \\\"http://0.0.0.0:3000/albums/3/photos/1101.json\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "create album",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums.json?album%5Bname%5D=name&album%5Bposition%5D=1",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"POST\\\" \\\"http://0.0.0.0:3000/albums.json?album%5Bname%5D=name&album%5Bposition%5D=1\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:3000/albums.json?album%5Bname%5D=&album%5Bposition%5D=1",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums.json?album%5Bname%5D=&album%5Bposition%5D=1",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"POST\\\" \\\"http://0.0.0.0:3000/albums.json?album%5Bname%5D=&album%5Bposition%5D=1\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:3000/albums/4.json?album%5Bname%5D=name&album%5Bposition%5D=1",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/4.json?album%5Bname%5D=name&album%5Bposition%5D=1",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"PUT\\\" \\\"http://0.0.0.0:3000/albums/4.json?album%5Bname%5D=name&album%5Bposition%5D=1\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:3000/albums/5.json",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/5.json",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"DELETE\\\" \\\"http://0.0.0.0:3000/albums/5.json\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:3000/albums/3/photos.json?photo%5Bname%5D=name&photo%5Bdescription%5D=description&photo%5Btaken_at%5D=2016-06-11&photo%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg&photo%5Balbum_id%5D=6",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/3/photos.json?photo%5Bname%5D=name&photo%5Bdescription%5D=description&photo%5Btaken_at%5D=2016-06-11&photo%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg&photo%5Balbum_id%5D=6",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"POST\\\" \\\"http://0.0.0.0:3000/albums/3/photos.json?photo%5Bname%5D=name&photo%5Bdescription%5D=description&photo%5Btaken_at%5D=2016-06-11&photo%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg&photo%5Balbum_id%5D=6\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "edit photo",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/3/photos/123.json?photo%5Bname%5D=name&photo%5Bdescription%5D=description&photo%5Btaken_at%5D=2016-06-11&photo%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"PUT\\\" \\\"http://0.0.0.0:3000/albums/3/photos/123.json?photo%5Bname%5D=name&photo%5Bdescription%5D=description&photo%5Btaken_at%5D=2016-06-11&photo%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg\\\""
+			},
+			"response": []
+		},
+		{
+			"name": "create multiple",
+			"request": {
+				"url": "http://0.0.0.0:3000/albums/12/photos/multiple.json?photos%5B%5D%5Bname%5D=name&photos%5B%5D%5Bdescription%5D=description&photos%5B%5D%5Btaken_at%5D=2016-06-11&photos%5B%5D%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg&photos%5B%5D%5Bname%5D=name2&photos%5B%5D%5Bdescription%5D=description2&photos%5B%5D%5Btaken_at%5D=2016-05-11&photos%5B%5D%5Burl%5D=http%3A%2F%2Ftest.com2%2Fj.jpg",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Generated from a curl request: \\ncurl -X \\\"POST\\\" \\\"http://0.0.0.0:3000/albums/12/photos/multiple.json?photos%5B%5D%5Bname%5D=name&photos%5B%5D%5Bdescription%5D=description&photos%5B%5D%5Btaken_at%5D=2016-06-11&photos%5B%5D%5Burl%5D=http%3A%2F%2Ftest.com%2Fj.jpg&photos%5B%5D%5Bname%5D=name2&photos%5B%5D%5Bdescription%5D=description2&photos%5B%5D%5Btaken_at%5D=2016-05-11&photos%5B%5D%5Burl%5D=http%3A%2F%2Ftest.com2%2Fj.jpg\\\""
+			},
+			"response": []
+		}
+	]
+}

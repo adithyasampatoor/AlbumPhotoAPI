@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h1><%= @album.name %></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <p>Contains <%= @album.photos.length %> photos.</p>
+    <% @album.photos.each do |photo| %>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="<%= photo.url %>" width="50" height="50" alt="<%= photo.name %>">
+        </div>
+        <div class="media-body">
+          <%= link_to "&times;".html_safe, album_photo_path(@album.id, photo.id), method: :delete, class: 'btn btn-large', style: 'float: right', "data-confirm": "Are you sure?" %>
+          <h4 class="media-heading"><%= link_to photo.name, album_photo_path(@album.id, photo.id) %></h4>
+          <h6>Taken at: <%= photo.taken_at %></h6>
+          <p><%= photo.description %></p>
+
+        </div>
+      </div>
+      <hr>
+    <% end %>
+  </div>
+</div>
+
+<% if @album.photos.length < 60 %>
+  <div class="row">
+    <div class="col-xs-12">
+      <%= link_to "Add photo", new_album_photo_path(@album.id), class: 'btn btn-large btn-primary' %>      
+    </div>
+  </div>
+<% end %>

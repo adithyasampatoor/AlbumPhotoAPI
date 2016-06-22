@@ -1,0 +1,28 @@
+
+<%= form_for [@album, @photo] do |f| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this album from being saved:</h2>
+
+      <ul>
+      <% @photo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field :album_id, value: @album.id %>
+    <div id="div_add">
+      <%= render partial: "sub_form", locals: {'f': f} %>  
+    </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<br/>
+
+<% unless @photo.id %>
+  <button class="btn btn-large btn-primary" id="add_button"> Add more photos </button>
+<% end %>
