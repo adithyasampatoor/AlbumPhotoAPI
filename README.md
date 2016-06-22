@@ -1,6 +1,6 @@
 # Description
 
-An Album Photo Project where you will find an API to add create an Album, add Photos to the Album.
+An Album Photo Project where you will find a RESTFUL API to add create an Album, add Photos to the Album.
 
 ##Following were taken care of
 
@@ -15,7 +15,7 @@ An Album Photo Project where you will find an API to add create an Album, add Ph
 9. Test cases for the controller actions are in the test folder.
 
 # Tech Specs
-Rails 4.2.6
+Rails 4.2.6, 
 Ruby 2.2.0
 
 # Getting Started
